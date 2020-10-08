@@ -1,0 +1,10 @@
+.navBar {
+    list-style: none;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.navBar li:hover {
+    border-bottom: plum 3px solid;
+    cursor: pointer;
+}

@@ -1,5 +1,6 @@
 import React from 'react';
 import Header from '../header/header';
+import NavBar from '../navbar/navbar';
 
 class HomePage extends React.Component{
 
@@ -7,6 +8,7 @@ class HomePage extends React.Component{
         return (
             <div>
                 <Header/>
+                <NavBar/>
             </div>
         )
     }
