@@ -1,19 +1,25 @@
 import React from 'react';
-// import HomePage from './components/homepage/homepage'
-import Header from './components/header/header';
-import NavBar from './components/navbar/navbar';
-import Insights from './components/insights/insights'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from 'react-router-dom';
+
+import HomePage from './components/homepage/homepage'
+import SingleInsight from './components/singleInsight/singleInsight'
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 class App extends React.Component {
   render(){
     return (
-    <div className="App">
-      {/* <HomePage/> */}
-      <Header/>
-      <NavBar/>
-      <Insights/>
-      </div>
+      <Router>
+        <div className="App">
+        <Switch>
+          <Route path={"/insights/:id"} component={SingleInsight} />
+          <Route path={"/"} component={HomePage}/>
+          </Switch>
+        </div>
+      </Router>
     );
   }
 }

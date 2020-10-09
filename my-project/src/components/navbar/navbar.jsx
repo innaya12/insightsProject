@@ -11,11 +11,9 @@ class NavBar extends React.Component {
     }
 
     onShow=()=>{
-        console.log("clicked", this.state.showComponent);
         this.setState({
             showComponent: !this.state.showComponent
         })
-        console.log("worked")
     }
 
     render() {
