@@ -1,13 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import HomePage from './components/homepage/homepage'
+// import './App.css';
+// import HomePage from './components/homepage/homepage'
+import Header from './components/header/header';
+import NavBar from './components/navbar/navbar';
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 function App() {
   return (
     <div className="App">
-      <HomePage/>
+      {/* <HomePage/> */}
+      <Header/>
+      <NavBar/>
     </div>
   );
 }
