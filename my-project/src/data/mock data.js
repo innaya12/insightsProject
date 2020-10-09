@@ -1,9 +1,9 @@
 import React from 'react';
 
 const allInsights = [
-    {index: 1, text:"It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout", stats:"47%"},
-    {index: 2, text:"The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using", stats:"47%"},
-    {index: 3, text:" Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text", stats:"47%"},
+    {index: 1, text: 'במאורה באדמה חי לו הוביט. לא מאורה מצחינה ומלוכלכת ומלאה לשלשת. הייתה זו מאורת הוביט ומשמעות הדבר נוחיות של בית', stats:"47%"},
+    {index: 2, text: 'היתה לה דלת עגולה דמוית צוהר, צבועה ירוק, ובדיוק במרכזה ידית פליז צהובה ונוצצת. הדלת נפתחה אל פרוזדור דמוי מנהרה שצורתו כצינור: מנהרה נעימה מאוד ונטולת עשן, עם קירות ', stats:"47%"},
+    {index: 3, text: 'רוב הפרוזדור, אם כי לא כולו, התפתל למרחק רב לאורך צלע "הגבעה" כך כינו אותה בני המקום אשר התגוררו מילין רבים מסביב לה ודלתות קטנות ועגולות רבות נפתחו ממנו מצדו האחד ומצדו האחר. לא היה צורך במדרגות בבית ההוביט', stats:"47%"},
 ];
 
 export {allInsights}
