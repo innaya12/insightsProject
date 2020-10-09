@@ -3,6 +3,9 @@
     font-weight: bold;
     padding: 10px;
 }
+.navBar li{
+    border-bottom: transparent 3px solid;
+}
 
 .navBar li:hover {
     border-bottom: plum 3px solid;
