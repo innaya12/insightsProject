@@ -1,4 +1,6 @@
 import React from 'react';
+import {Link} from "react-router-dom";
+
 import './style.css';
 
 
@@ -39,10 +41,12 @@ class BuildInsights extends React.Component {
                     <div className={"middleBox"}>
                         <input type={"text"} defaultValue={text} ref={this.textInput} ></input>
                     </div> :
-                    <div className={"middleBox"}>
-                      <button onClick={this.onEdit}><i className="fas fa-ellipsis-h"></i></button>
-                      <p>{text} </p> 
-                    </div>}
+                    <Link to={`/insights/${index}`}>
+                        <div className={"middleBox"}>
+                        <button onClick={this.onEdit}><i className="fas fa-ellipsis-h"></i></button>
+                        <p>{text} </p> 
+                        </div>
+                    </Link>}
                     {inEditMode ?
                     <div>
                         <button onClick={this.upadteText}>Edit</button>
