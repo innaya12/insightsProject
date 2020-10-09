@@ -27,6 +27,11 @@
     font-size: 20px;
 }
 
+.middleBox button{
+    position: absolute;
+    left: 10px;
+} 
+
 .bottomBox{
     font-size: 12px;
     color: gray;
@@ -52,3 +57,7 @@
         font-weight: bold;
     }
 }
+/* input { 
+    font-size:1.3em; 
+    padding:.5em; 
+} */
