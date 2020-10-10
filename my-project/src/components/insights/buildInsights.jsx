@@ -41,12 +41,12 @@ class BuildInsights extends React.Component {
                     <div className={"middleBox"}>
                         <input type={"text"} defaultValue={text} ref={this.textInput} ></input>
                     </div> :
-                    <Link to={`/insights/${index}`}>
                         <div className={"middleBox"}>
                         <button onClick={this.onEdit}><i className="fas fa-ellipsis-h"></i></button>
+                        <Link to={`/insights/${index}`}>
                         <p>{text} </p> 
-                        </div>
-                    </Link>}
+                        </Link>
+                        </div>}
                     {inEditMode ?
                     <div>
                         <button onClick={this.upadteText}>Edit</button>
