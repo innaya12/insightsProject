@@ -20,7 +20,7 @@ class BuildInsights extends React.Component {
         })
     }
 
-    upadteText = (e) =>{
+    upadteText = () =>{
         let newText = this.textInput.current.value;
         this.setState({
             inEditMode: false,
@@ -39,18 +39,19 @@ class BuildInsights extends React.Component {
                 <div className={"insideBox"}>
                     {inEditMode ?
                     <div className={"middleBox"}>
-                        <input type={"text"} defaultValue={text} ref={this.textInput} ></input>
-                    </div> :
-                        <div className={"middleBox"}>
-                        <button onClick={this.onEdit}><i className="fas fa-ellipsis-h"></i></button>
-                        <Link to={`/insights/${index}`}>
-                        <p>{text} </p> 
+                        <textarea className={"form-control"} aria-label={"With textarea"} defaultValue={text} ref={this.textInput} />
+                    </div> 
+                    :
+                    <div className={"middleBox"}>
+                        <button onClick={this.onEdit}><i className={"fas fa-ellipsis-h"}></i></button>
+                        <Link id={"middleBoxText"} to={`/insights/${index}`}>
+                            <p>{text} </p> 
                         </Link>
-                        </div>}
+                    </div>}
                     {inEditMode ?
-                    <div>
-                        <button onClick={this.upadteText}>Edit</button>
-                        <button onClick={this.onEdit}>cancel</button>
+                    <div className={"buttonWrapper"}>
+                        <button id={"saveButton"} className={"edit btn btn-success"} onClick={this.upadteText}>שמירה</button>
+                        <button id={"cancelbutton"} className={"edit btn btn-success"} onClick={this.onEdit}>ביטול</button>
                     </div> :
                     <div className={"bottomBox"}>
                         <p>{stats}</p>
