@@ -23,8 +23,13 @@
     }
 }
 
-.middleBox {
+#middleBoxText {
+    color: black;
     font-size: 20px;
+}
+
+#middleBoxText:hover {
+    text-decoration: none;
 }
 
 .middleBox button{
@@ -35,10 +40,6 @@
 .bottomBox{
     font-size: 12px;
     color: gray;
-}
-
-.titleDiv{
-    /* display: inline-block; */
 }
 
 .title{
@@ -57,7 +58,38 @@
         font-weight: bold;
     }
 }
-/* input { 
-    font-size:1.3em; 
-    padding:.5em; 
-} */
+
+.buttonWrapper{
+    position: relative;
+}
+.edit {
+    position: relative;
+    margin: 10px 2px 0px 0px ;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    border-radius: 30px !important;
+}
+#saveButton {
+    background-color: white;
+    color: green;
+    border-color: green;
+    right: 825px;
+}
+
+@media only screen and (max-width:1170px){
+    #saveButton{
+        right: 300px
+    }
+}
+
+#cancelbutton{
+    background-color: green;
+    right: 815px;
+}
+
+
+@media only screen and (max-width:1170px){
+    #cancelbutton{
+        right: 295px
+    }
+}
