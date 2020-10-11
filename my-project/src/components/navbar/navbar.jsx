@@ -1,6 +1,6 @@
 import React from 'react';
 import './style.css';
-import Insights from '../insights/insights';
+// import Insights from '../insights/insights';
 
 class NavBar extends React.Component {
     // onClick methods - to activate the nav bar
