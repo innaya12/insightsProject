@@ -32,7 +32,7 @@ class BuildInsights extends React.Component {
         const {index, stats} = this.props;
         const {inEditMode, text} = this.state;
         return (
-            <div className={"box"}>
+            <div className={"wrapper"}>
                 <div className={"titleDiv"}>
                     <h2 className={"title"}>{index}</h2>
                 </div>
@@ -43,7 +43,7 @@ class BuildInsights extends React.Component {
                     </div> 
                     :
                     <div className={"middleBox"}>
-                        <button onClick={this.onEdit}><i className={"fas fa-ellipsis-h"}></i></button>
+                        <button  id={"menu"} onClick={this.onEdit}><i  className={"fa fa-ellipsis-h"} aria-hidden={"true"}></i></button>
                         <Link id={"middleBoxText"} to={`/insights/${index}`}>
                             <p>{text} </p> 
                         </Link>

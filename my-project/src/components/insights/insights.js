@@ -15,7 +15,7 @@ class Insights extends React.Component {
         const {insightsArray} = this.state;
         return (
             <div className={"container-fluid boxWrapper"}>
-                <div className={"container"}>
+                <div className={"container box"}>
                     <div className={"d-flex flex-column"}>
                         {/* <div className={" "}> */}
                             {insightsArray.map(insight => <BuildInsights {...insight} 
