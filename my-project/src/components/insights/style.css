@@ -75,24 +75,24 @@
     background-color: white;
     color: #1A8239;
     border-color: #1A8239;
-    right: 825px;
+    right: 880px;
 }
 
 @media only screen and (max-width:1170px){
     #saveButton{
-        right: 300px
+        right: 340px
     }
 }
 
 #cancelbutton{
     background-color: #1A8239;
-    right: 815px;
+    right: 870px;
 }
 
 
 @media only screen and (max-width:1170px){
     #cancelbutton{
-        right: 295px
+        right: 335px
     }
 }
 
