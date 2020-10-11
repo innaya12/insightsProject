@@ -1,0 +1,45 @@
+.widgetWrapper {
+    color: white;
+    font-weight: bold;
+    background-color: #F0F0F0;
+    padding-top: 15px;
+    padding-bottom: 3px;
+}
+
+.widget{
+    width: 79%;
+    height: 93px;
+    margin: auto;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    background-color: #0779B2;
+    /* overflow: hidden; */
+}
+
+@media only screen and (max-width:1170px){
+    .widget{
+        width: 85%;
+    }
+}
+
+.widget p{
+    padding: 21px 0 0 96px;
+    text-align: right;
+}
+@media only screen and (max-width:1170px){
+    .widget p{
+        padding: 5px 10px 0 30px;
+    }
+}
+
+ #logo{
+     width: 8%;
+     height: 5%;
+ }
+
+ @media only screen and (max-width:1170px){
+    #logo{
+        width: 17%;
+        height: 11%;
+    }
+}

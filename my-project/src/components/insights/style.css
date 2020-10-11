@@ -1,8 +1,11 @@
 .boxWrapper{
     background-color: #F0F0F0;
 }
-
 .box{
+    /* padding:0; */
+}
+
+.wrapper{
     position: relative;
     background-color: white;
     margin: 5px;
@@ -18,8 +21,7 @@
 
 @media only screen and (max-width:1170px){
     .insideBox{
-        padding: 10px 2px;
-
+        padding: 10px 15px;
     }
 }
 
@@ -46,7 +48,7 @@
     position: absolute;
     padding: 47px 8px;
     right: 1px;
-    background-color: green;
+    background-color: #1A8239;
     color: white;
 }
 
@@ -71,8 +73,8 @@
 }
 #saveButton {
     background-color: white;
-    color: green;
-    border-color: green;
+    color: #1A8239;
+    border-color: #1A8239;
     right: 825px;
 }
 
@@ -83,7 +85,7 @@
 }
 
 #cancelbutton{
-    background-color: green;
+    background-color: #1A8239;
     right: 815px;
 }
 
@@ -92,4 +94,9 @@
     #cancelbutton{
         right: 295px
     }
+}
+
+#menu{ 
+    background-color: white;
+    border: 1px solid transparent;
 }
