@@ -1,5 +1,5 @@
 import React from 'react';
-import {allInsights} from '../../data/mock data';
+import {allInsights, process} from '../../data/mock data';
 
 class SingleInsight extends React.Component{
     constructor(props){
@@ -13,13 +13,22 @@ class SingleInsight extends React.Component{
 
     componentDidMount = () =>{
         const {id}  = this.props.match.params;
-        const data = allInsights.find(x => x.index == id);
-        const {index, text, stats} = data
-        this.setState({
-            index,
-            text,
-            stats
-        })       
+        const fakeData = allInsights.find(x => x.index == id);
+        if(fakeData){
+            const {index, text, stats} = fakeData
+            this.setState({
+                index,
+                text,
+                stats
+            })       
+        } else {
+            const dataProcess = process.insights.find(x => x.id == id);
+            this.setState({
+                index: dataProcess.id,
+                text: dataProcess.data,
+                stats: dataProcess.statistics.publishedContributionsPercent
+            })      
+        }
     }
 
     render(){    

@@ -1,19 +1,37 @@
 import React from 'react';
 import {Link} from "react-router-dom";
-
 import './style.css';
-
 
 class BuildInsights extends React.Component {
     constructor(props){
         super(props);
         this.state ={
             inEditMode : false,
-            text : this.props.text
+            index: '',
+            stats:'',
+            text: ''
         }
         this.textInput = React.createRef();
     };
 
+    componentDidMount = () =>{
+        if (this.props.id){
+            const {id, data, statistics} = this.props;
+            this.setState({
+                index: id,
+                stats : statistics.publishedContributionsPercent,
+                text: data
+            })
+        }else {
+            const {text, index, stats} = this.props;
+            this.setState({
+                index,
+                stats,
+                text
+            })
+        }
+    }
+    
     onEdit = () =>{
         this.setState({
             inEditMode: !this.state.inEditMode
@@ -29,8 +47,8 @@ class BuildInsights extends React.Component {
     }
 
     render(){
-        const {index, stats} = this.props;
-        const {inEditMode, text} = this.state;
+        const {inEditMode, index, stats, text} = this.state;
+        
         return (
             <div className={"wrapper"}>
                 <div className={"titleDiv"}>

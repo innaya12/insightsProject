@@ -9,7 +9,7 @@ class Widget extends React.Component{
             <div className={"container-fluid widgetWrapper"}>
                 <div className={"widget"}>
                     <div className={"d-flex justify-content-between"}>
-                        <p>התהליך עדיין פתוח לתשובות. המשתתפכים יוכלו לראות את התובנות הסופיות רק לאחר שיאושרו על ידי אחד ממנהלי התהליך</p>
+                        <p>.התהליך עדיין פתוח לתשובות. המשתתפים יוכלו לראות את התובנות הסופיות רק לאחר שיאושרו על ידי אחד ממנהלי התהליך</p>
                         <img id={"logo"} src={Logo} alt={"logo"} />
                     </div>
                 </div>
